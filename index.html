@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelFlow | Image Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Pixel<span>Flow</span></div>
+            
+            <form id="search-form">
+                <div class="search-wrapper">
+                    <input type="text" name="query" placeholder="Search for any image..." aria-label="Search" id="search-box">
+                    <button type="submit" class="search-btn" id="search-result-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="spacer"></div> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="gallery-grid" id="image-container"></section>
+        
+        <div class="load-more">
+            <button class="btn-load" id="show-more">Load More Images</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
